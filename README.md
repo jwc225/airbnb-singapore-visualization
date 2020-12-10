@@ -5,4 +5,4 @@ Leaflet map [visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/) o
 ## Work in Progress
 
 - add new cities and listing data to visualize
-  - create select menu for use to choose city
+  - create select menu for user to choose city
