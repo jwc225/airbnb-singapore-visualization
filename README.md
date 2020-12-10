@@ -1,6 +1,8 @@
-# airbnb-singapore-visualization
+# Singapore Airbnb Map Visualization
 
-## [Singapore Airbnb visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/)
+Leaflet map [visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/) of Airbnb listings in Singapore
 
+### Work in Progress
 
-### WIP: add select-menu for users to choose other cities to visualize
+- add new cities and listing data to visualize
+  - create select menu for use to choose city
