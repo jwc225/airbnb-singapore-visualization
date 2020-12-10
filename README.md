@@ -2,7 +2,7 @@
 
 Leaflet map [visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/) of Airbnb listings in Singapore available on 26 October 2020. Listing data accquired from http://insideairbnb.com/.
 
-![Image: A capture of the leaflet visualization. Dated 9 Dec 2020.](https://github.com/jwc225/airbnb-singapore-visualization/blob/main/img/web-app-capture.jpg)
+![Image: A capture of the leaflet visualization. Dated 9 Dec 2020.](https://github.com/jwc225/airbnb-singapore-visualization/blob/b237f58cece53a52dd838f6e500e4a9d0250d46b/img/web-app-capture.jpg)
 
 ## Work in Progress
 
