@@ -14,7 +14,7 @@ intro <- tabPanel(
 )
 
 
-##### Interactive Page One ####################################################
+##### Interactive tab one #####################################################
 
 # Convert price column to vector of numbers
 data_sing$price <- as.numeric(gsub("[$,]", "", data_sing$price))
@@ -47,12 +47,11 @@ max_guests <- max(data_sing$accommodates)
 
 slider_accomodates <- sliderInput(
   inputId = "accom_slider",
-  label = "Maximum guest capacity",
+  label = "Number of guests",
   min = min_guests,
   max = max_guests,
   step = 1,
-  value = c(min_guests, max_guests),
-  dragRange = TRUE,
+  value = 1,
   width = '80%'
 )
 
@@ -83,7 +82,7 @@ slider_score <- sliderInput(
   label = "Review score",
   min = 0,
   max = 5,
-  step = 1,
+  step = 0.1,
   value = c(0, 5),
   dragRange = TRUE,
   width = "80%"
@@ -126,29 +125,6 @@ page_one <- tabPanel(
     )
   )
 )
-
-
-##### Interactive Page Two ####################################################
-
-
-
-
-##### Interactive Page Three ##################################################
-
-# Define a layout for interactive page
-page_three <- tabPanel(
-  title = tags$header("Page 3")
-)
-
-
-##### Conclusion ##############################################################
-
-conclusion <- tabPanel(
-  title = tags$header("Conclusion")
-)
-
-
-#------------------------------------------------------------------------------
 
 # Define a ui for the application
 ui <- navbarPage(

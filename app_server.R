@@ -6,9 +6,7 @@ library("RColorBrewer")
 library("batman")
 
 # Read data (set wdir to root)
-data_sing <- read.csv("data/singapore_listings.csv", encoding="latin1")
-
-
+data_sing <- read.csv("data/singapore_listings.csv")
 
 
 # Define a server for the application
@@ -52,8 +50,7 @@ server <- function(input, output, session) {
              else id == id) %>%
       filter(price >= input$price_slider[1] & 
                price <= input$price_slider[2]) %>%
-      filter(accommodates >= input$accom_slider[1] & 
-               accommodates <= input$accom_slider[2]) %>%
+      filter(accommodates >= input$accom_slider) %>%
       filter(if (input$is_superhost == TRUE) host_is_superhost == TRUE
              else id == id) %>%
       filter(if (input$select == "All") id == id
@@ -109,6 +106,8 @@ server <- function(input, output, session) {
         lat = ~latitude,
         lng = ~longitude,
         stroke = FALSE,
+        label = ~paste0("$", price),
+        labelOptions = labelOptions(textsize = "20px"),
         popup = ~popup_content,
         color = ~palette_fn(room_type),
         radius = 20,
@@ -123,14 +122,4 @@ server <- function(input, output, session) {
         opacity = 1
       )
   })
-  
-
-
-  ##### Interactive Page Two ##################################################
-
-
-  ##### Interactive Page Three ################################################
-
-
-
 }
