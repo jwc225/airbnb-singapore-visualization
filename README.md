@@ -9,9 +9,8 @@ Leaflet map [visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/) o
 * add new cities and listing data to visualize
   * create select menu for user to choose city
   
-* <del>add an optional price marker map layer that can be turned on/off to quickly see prices</del>
-  update: This option increases drastically increases loadtimes. Unfeasible unless functionality is added to
-          prevent all listing labels to be shown at once (show only a limited number of listings, within the current zoom range). 
+* <del>add an optional price marker map layer that can be turned on/off to quickly see prices</del><br/>
+  Update: This option increases drastically increases loadtimes. Unfeasible unless functionality is added to prevent all listing labels to be shown at once (show only a limited number of listings, within the current zoom range). 
 
 * add filter options for ameneities
 
@@ -23,4 +22,4 @@ Leaflet map [visualization](https://jwc225.shinyapps.io/airbnb_singapore_viz/) o
 
 ## Completed
 
-* Hover label on map listings that shows price/night
+* Hover label on map listings that shows price (per night)
