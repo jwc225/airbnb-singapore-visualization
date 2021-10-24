@@ -117,7 +117,7 @@ page_one <- tabPanel(
       checkbox_superhost
     ),
     mainPanel(
-      HTML("<center><h3>Singapore Airbnb Listings (26 October, 2020)
+      HTML("<center><h3>Singapore Airbnb Listings (29 September, 2021)
            </h3></center>"),
       tags$style(type = "text/css",
                  "#m_sing {height: calc(100vh - 150px) !important;}"),
