@@ -5,9 +5,9 @@ account: jwc225
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3381067
-bundleId: 3968698
+bundleId: 5171391
 url: https://jwc225.shinyapps.io/airbnb_singapore_viz/
-when: 1607569589.1439
+when: 1635063493.04079
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: data/.DS_Store|data/boston_listings.csv|data/chicago_listings.csv

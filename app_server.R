@@ -34,9 +34,6 @@ server <- function(input, output, session) {
   # Render leaflet map
   output$m_sing <- renderLeaflet({
   
-    # change score ratings to a 5 point scale
-    data_sing$review_scores_rating <- data_sing$review_scores_rating * 0.05  
-    
     # Set listings with no reviews to 0 (assume default stars is zero)
     data_sing$review_scores_rating <- ifelse(data_sing$number_of_reviews == 0,
                                              0,
